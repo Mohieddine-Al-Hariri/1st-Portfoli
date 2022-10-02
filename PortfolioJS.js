@@ -39,9 +39,6 @@ function deveOptions(){
         tag.removeEventListener('click',deveOptions);
         for(var i=0; i<btn.length; i++) {btn[i].style.setProperty('display','inline-block');}
         
-        
-
-
         let l_tt=10;
         btn[0].addEventListener('click',function(){secTwor.style.setProperty('top',`${l_tt-=5}px`);});
         btn[1].addEventListener('click',function(){secTwor.style.setProperty('top',`${l_tt+=5}px`);});
@@ -64,16 +61,9 @@ function deveOptions(){
         secThree.style.setProperty('left','50px');
         control.addEventListener("click", bgChanger);
         var textTwo = document.createElement("h1");
-        textTwo.innerHTML= "Developer Options ON!";
+        textTwo.innerHTML= "Developer Options: <br> ON!";
         bg.appendChild(textTwo);
-        textTwo.style.setProperty('position','fixed');
-        textTwo.style.setProperty('width','fixed');
-        textTwo.style.setProperty('left','50%');
-        textTwo.style.setProperty('color','white');
-        textTwo.style.setProperty('margin-left','-45%');
-        textTwo.style.setProperty('top','50%');
-        textTwo.style.setProperty('font-size','280%');
-        textTwo.style.setProperty('text-align','center');
+        textTwo.classList.add('text-two');
         setTimeout(function(){ textTwo.style.setProperty('animation','opic 2s'); }, 3000);
         easterEggs();
         setTimeout(function(){ bg.removeChild(textTwo) }, 4300);
@@ -86,14 +76,8 @@ function easterEggs(){
     var textThree = document.createElement("h1");
     textThree.innerHTML= `You Found ${egg} of the 3 Eastereggs!`;
     bg.appendChild(textThree);
-    textThree.style.setProperty('position','fixed');
-    textThree.style.setProperty('width','fixed');
-    textThree.style.setProperty('color','yellow');
-    textThree.style.setProperty('margin','auto');
-    textThree.style.setProperty('width','100%');
+    textThree.classList.add('text-three');
     textThree.style.setProperty('top',`${5-egg}0%`);
-    textThree.style.setProperty('font-size','200%');
-    textThree.style.setProperty('text-align','center');
     
     setTimeout(function(){ textThree.style.setProperty('animation','opic 2s'); }, 3000);
     setTimeout(function(){ bg.removeChild(textThree) }, 4300);

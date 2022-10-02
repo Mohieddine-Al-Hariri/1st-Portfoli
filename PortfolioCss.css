@@ -383,6 +383,26 @@ button{display: none; width: 40px; height: 40px;}
 #proj-btn-up{position: absolute;margin-left:1%;  top: 770px;}
 #proj-btn-down{position: absolute;margin-left: 1%;  top: 870px;}
 
+/*added text from js*/
+
+.text-two{
+    position: fixed;
+    width: 100%;
+    color: white;
+    top: 50%;
+    font-size: 280%;
+    text-align: center;;
+}
+.text-three{
+    position: fixed;
+    width: 100%;
+    color: yellow;
+    margin: auto;
+    font-size: 200%;
+    text-align: center;;
+}
+
+
 @keyframes opic{
     from{opacity: 1;}
     to{opacity: .1;}
@@ -404,13 +424,15 @@ button{display: none; width: 40px; height: 40px;}
 
     #name-btn-up{transform:translateX(0%);top: 110px;margin-left: 88%;}
     #name-btn-down{transform:translateX(0%);top: 190px;margin-left: 88%;}
-    #binary-btn-up{margin-left: 5%;}
-    #binary-btn-down{margin-left: 5%;}
-    #cards-btn-up{margin-left: 4%; top: 500px;}
-    #cards-btn-down{margin-left: 4%;top: 570px;}
+    #binary-btn-up{margin-left: 4%;}
+    #binary-btn-down{margin-left: 4%;}
+    #cards-btn-up{margin-left: 3.5%; top: 500px;}
+    #cards-btn-down{margin-left: 3.5%;top: 570px;}
     #proj-btn-up{position: absolute;margin-left:1%;  top: 940px;}
 #proj-btn-down{position: absolute;margin-left: 1%;  top: 1020px;}
 }
+/*Laptop Format*/
+
 @media only screen and (min-width:1024px){
     body{background: url(wallpaperflare.com_wallpaper\ \(5\).jpg) no-repeat center center/cover ;width: 100vw; height: 100vh;display: flex; justify-content: center; align-items: center;}
     .bg{width: 80vw;
@@ -432,6 +454,9 @@ button{display: none; width: 40px; height: 40px;}
         margin-right: 5px;
     }
     aside.card div.front{overflow: hidden;}
+    #name-btn-up{transform:translateX(0%);top: 110px;margin-left: 92%;}
+    #name-btn-down{transform:translateX(0%);top: 190px;margin-left: 92%;}
+
     /*Scroll Bar*/
     ::-webkit-scrollbar{
         width: 10px;
@@ -452,6 +477,6 @@ button{display: none; width: 40px; height: 40px;}
     ::-webkit-scrollbar-thumb:hover{
         background-color: rgba(77, 77, 77, 0.9);
     }
-
+    .text-two{margin-left: -10%;}
 }
 
