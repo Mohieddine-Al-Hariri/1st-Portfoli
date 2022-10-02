@@ -262,7 +262,6 @@ aside.card div.back{
     overflow-y: scroll;
 }
 aside.card div.front{
-    /* background-image: linear-gradient(-45deg,red,blue); */
     background-color: #00DBDE;
     background-image: linear-gradient(-90deg, #00DBDE 0%, #FC00FF 100%);
     z-index: 1000;
@@ -270,7 +269,6 @@ aside.card div.front{
     font-size: 30px;
     justify-content: center;
     align-items: center;
-
 }
 aside.card:nth-child(2) div.front{background: #FC00FF; background: linear-gradient(90deg,#FC00FF 0%,#c800ff 50%, #FC00FF 100%);}
 aside.card:nth-child(1) div.front{background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);}
@@ -297,13 +295,7 @@ aside.card:hover div.back{
 .projects div:first-child{font-size: 30px; color: #FC00FF;}
 .projects div:last-child a{text-align: center;}
 .projects div:last-child a h4{color: black; cursor: pointer; background-color: white; border-radius: 40px; border: black solid; margin: 3px; padding: 0 4px;}
-/* .projects{text-align: left; height: 100px; position: relative;left: 30px; margin-top: 30px; }
-.projects div{display: inline-block; height: 100%;position: relative; top: 0; margin: 10px; padding: 15px;}
-.projects div:nth-child(1){float: left; font-size: 30px; }
-.projects div:nth-child(1) h3{margin-top: 18px; color: rgb(28, 159, 241);}
-.projects div:nth-child(2){font-size: 20px;display: flex;flex-direction:column; flex-wrap: nowrap; gap: 5px;border-left: solid 2px yellow; }
-a{text-decoration: none;}
-.projects a{color:rgb(43, 205, 67); text-decoration: underline; } */
+
 
 /*Contact Me*/
 .Contact-Me{

@@ -10,6 +10,7 @@ const secTwor = document.querySelector('#sec-two');
 const binary = document.querySelector('#binary');
 const secThree = document.querySelector('#sec-three');
 const projects = document.querySelector('#projects');
+const throwing = document.getElementById('glass-ul').querySelectorAll('li');
 //Bg Changing
 let i = 0;
 const gradients = ['linear-gradient(45deg,#800080 0%,#E90207 46%,#ff8c80 100%)','linear-gradient(45deg, #020024 0%, #090979 35%, #00d4ff 100%)','linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%)',
@@ -91,4 +92,13 @@ function easterSecTwo(){
     secTwo.removeEventListener("click",easterEggs);
 }
 secTwo.addEventListener("click", easterSecTwo);
-let isMobile = window.matchMedia("(pointer:coarse)").matches;
+
+// console.log(navigator.userAgent);
+// console.log(navigator.userAgentData.mobile)
+// console.log(throwing.length)
+// if(navigator.userAgentData.mobile===true){console.log("working");}
+
+if(navigator.userAgentData.mobile===true){
+    for(let i=0;i<throwing.length;i+=2){
+        throwing[i].style.setProperty('display','none');
+}}
