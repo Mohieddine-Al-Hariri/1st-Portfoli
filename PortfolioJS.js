@@ -91,3 +91,4 @@ function easterSecTwo(){
     secTwo.removeEventListener("click",easterEggs);
 }
 secTwo.addEventListener("click", easterSecTwo);
+let isMobile = window.matchMedia("(pointer:coarse)").matches;

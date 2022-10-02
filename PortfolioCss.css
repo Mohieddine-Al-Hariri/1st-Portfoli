@@ -117,6 +117,7 @@
         border-radius: 50%;
     }
 }
+
 /*ctrl and </>*/
 #topz{position: relative; margin: auto; margin-top: 20px;width: calc(100% - 20px); cursor: pointer;}
 #topz h3:first-child{margin-right: auto; border: 8px double ; 
@@ -169,7 +170,7 @@ a{text-decoration: none;}
 }
 @keyframes ani{
     0%, 100%{
-        margin-top: 0;
+        transform: translateY(0);
         text-shadow: #fff 0.006em 0.006em 0.007em,
                     #9c9c9c 1px 1px 1px,
                     #9c9c9c 1px 2px 1px,
@@ -189,7 +190,7 @@ a{text-decoration: none;}
                     #fff -0.5em -0.1em 100px;
     }
     50%{
-        margin-top: -20px;
+        transform: translateY(-20px);
         text-shadow: #fff 0.006em 0.006em 0.007em,
                     #9c9c9c 1px 1px 1px,
                     #9c9c9c 1px 2px 1px,
@@ -209,6 +210,7 @@ a{text-decoration: none;}
                     #fff -0.5em -0.1em 100px;
     }
 }
+
 
 /*Binary*/
 .binary{ 
