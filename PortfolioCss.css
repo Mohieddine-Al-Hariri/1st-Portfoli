@@ -8,11 +8,6 @@
     width: 100%;
     height: 100%;
     top: 0;
-    /* background-image: linear-gradient(
-        45deg,#800080 0%,
-        #E90207 46%,
-        #ff8c80 100%
-    ); */
     background-image: var(--bgcolor);
     background-color:var(--bgcolor);
     z-index: -5;
@@ -165,7 +160,7 @@ a{text-decoration: none;}
                     rgba(16, 16, 16, 0.4) 1px 22px 35px,
                     rgba(16, 16, 16, 0.4) 1px 30px 65px,
                     #fff -0.5em -0.1em 100px;
-    animation: ani 1s infinite ease-in-out;
+    animation: ani 1s infinite ease-in-out ;
     animation-delay: calc(.1s *var(--i));
 }
 @keyframes ani{
