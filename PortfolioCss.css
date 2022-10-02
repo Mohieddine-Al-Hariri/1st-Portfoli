@@ -432,25 +432,26 @@ button{display: none; width: 40px; height: 40px;}
         margin-right: 5px;
     }
     aside.card div.front{overflow: hidden;}
+    /*Scroll Bar*/
+    ::-webkit-scrollbar{
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track{
+        background-color: rgb(155, 154, 154);
+        opacity:0.3;
+        height: 100vh;
+        border-radius: 100vw;
+        margin-block: .5em;
+        /* border: .25em solid hsl(120 75% 50%, 1); *hsl-scale:*https://www.w3schools.com/colors/colors_hsl.asp**/
+    }
+    ::-webkit-scrollbar-thumb{
+        background-color: rgba(90, 89, 89,.7);
+        /* background: linear-gradient(red, blue, yellow); */
+        border-radius: 100vw;
+    }
+    ::-webkit-scrollbar-thumb:hover{
+        background-color: rgba(77, 77, 77, 0.9);
+    }
+
 }
 
-/*Scroll Bar*/
-::-webkit-scrollbar{
-    width: 10px;
-}
-::-webkit-scrollbar-track{
-    background-color: rgb(155, 154, 154);
-    opacity:0.3;
-    height: 100vh;
-    border-radius: 100vw;
-    margin-block: .5em;
-    /* border: .25em solid hsl(120 75% 50%, 1); *hsl-scale:*https://www.w3schools.com/colors/colors_hsl.asp**/
-}
-::-webkit-scrollbar-thumb{
-    background-color: rgba(90, 89, 89,.7);
-    /* background: linear-gradient(red, blue, yellow); */
-    border-radius: 100vw;
-}
-::-webkit-scrollbar-thumb:hover{
-    background-color: rgba(77, 77, 77, 0.9);
-}
