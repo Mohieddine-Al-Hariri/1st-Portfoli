@@ -434,7 +434,7 @@ button{display: none; width: 40px; height: 40px;}
 /*Laptop Format*/
 
 @media only screen and (min-width:1024px){
-    body{background: url(wallpaperflare.com_wallpaper\ \(5\).jpg) no-repeat center center/cover ;width: 100vw; height: 100vh;display: flex; justify-content: center; align-items: center;}
+    body{background: url(wallpaperflare.com_wallpaper\ \(6\).jpg) no-repeat center center/cover ;width: 100vw; height: 100vh;display: flex; justify-content: center; align-items: center;}
     .bg{width: 80vw;
         height: 80vh;
         border-radius: 30px;
