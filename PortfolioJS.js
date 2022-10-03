@@ -99,6 +99,6 @@ secTwo.addEventListener("click", easterSecTwo);
 // if(navigator.userAgentData.mobile===true){console.log("working");}
 
 if(navigator.userAgentData.mobile===true){
-    for(let i=1;i<throwing.length;i++){
+    for(let i=0;i<(throwing.length-1);i++){
         throwing[i].style.setProperty('display','none');
 }}
