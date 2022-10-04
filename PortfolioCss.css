@@ -458,7 +458,7 @@ button{display: none; width: 40px; height: 40px;}
         height: 330px;
         margin-bottom: 90px;
         overflow: hidden;
-        overflow-x: scroll;;
+        overflow-x: scroll;
         margin-right: 5px;
     }
     #name-btn-up{transform:translateX(0%);top: 110px;margin-left: 92%;}
@@ -466,7 +466,7 @@ button{display: none; width: 40px; height: 40px;}
     
     .text-two{margin-left: -10%;}
 }
-
+@media only screen and (min-width:1816px){.sec-three{overflow: hidden;}}
 /*Scroll Bar*/
 ::-webkit-scrollbar{
     width: 10px;
