@@ -95,20 +95,11 @@ function easterSecTwo(){
 }
 secTwo.addEventListener("click", easterSecTwo);
 
-// console.log(navigator.userAgent);
-// console.log(navigator.userAgentData.mobile)
-// console.log(throwing.length)
-// if(navigator.userAgentData.mobile===true){console.log("working");}
 
-console.log(navigator.userAgentData.mobile)
-console.log(Li)
 if(navigator.userAgentData.mobile===true){
     console.log("mobile");
-    for(let i=0;i<(throwing.length-1);i++){
-        throwing[i].style.setProperty('display','none');
     for(let i=0;i<Li.length;i++){
         Li[i].style.setProperty('animation','none');
     }
-
     scrollbar.style.setProperty('display','none');
-}}
+}
