@@ -386,12 +386,14 @@ button{display: none; width: 40px; height: 40px;}
     top: 50%;
     font-size: 280%;
     text-align: center;
+    z-index: 5;
 }
 .text-three{
     position: absolute;
     width: 100%;
     color: yellow;
     font-size: 200%;
+    z-index: 5;
     text-align: center;
 }
 
@@ -405,7 +407,6 @@ button{display: none; width: 40px; height: 40px;}
 @media only screen and (min-width:350px){
     .ul-two li{font-size: 60px;}
 }
-
 
 /*Ipad Format*/
 @media only screen and (min-width:768px){
@@ -462,7 +463,6 @@ button{display: none; width: 40px; height: 40px;}
     }
     #name-btn-up{transform:translateX(0%);top: 110px;margin-left: 92%;}
     #name-btn-down{transform:translateX(0%);top: 190px;margin-left: 92%;}
-
     
     .text-two{margin-left: -10%;}
 }
@@ -481,7 +481,6 @@ button{display: none; width: 40px; height: 40px;}
 }
 ::-webkit-scrollbar-thumb{
     background-color: rgba(90, 89, 89,.7);
-    /* background: linear-gradient(red, blue, yellow); */
     border-radius: 100vw;
 }
 ::-webkit-scrollbar-thumb:hover{
