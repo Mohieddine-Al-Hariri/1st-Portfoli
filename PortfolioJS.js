@@ -11,6 +11,8 @@ const binary = document.querySelector('#binary');
 const secThree = document.querySelector('#sec-three');
 const projects = document.querySelector('#projects');
 const throwing = document.getElementById('glass-ul').querySelectorAll('li');
+const scrollbar = document.querySelector('::-webkit-scrollbar');
+const Li = secTwo.querySelectorAll('li');
 //Bg Changing
 let i = 0;
 const gradients = ['linear-gradient(45deg,#800080 0%,#E90207 46%,#ff8c80 100%)','linear-gradient(45deg, #020024 0%, #090979 35%, #00d4ff 100%)','linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%)',
@@ -98,7 +100,15 @@ secTwo.addEventListener("click", easterSecTwo);
 // console.log(throwing.length)
 // if(navigator.userAgentData.mobile===true){console.log("working");}
 
+console.log(navigator.userAgentData.mobile)
+console.log(Li)
 if(navigator.userAgentData.mobile===true){
+    console.log("mobile");
     for(let i=0;i<(throwing.length-1);i++){
         throwing[i].style.setProperty('display','none');
+    for(let i=0;i<Li.length;i++){
+        Li[i].style.setProperty('animation','none');
+    }
+
+    scrollbar.style.setProperty('display','none');
 }}

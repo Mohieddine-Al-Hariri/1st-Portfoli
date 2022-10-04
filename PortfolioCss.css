@@ -225,13 +225,15 @@ a{text-decoration: none;}
 .sec-three{
     position: relative;
     display: grid;
-    gap: 20px;
+    gap: 40px;
     width: 100%;
-    height: 40vh; /*???*/
+    height: 280px;
     justify-items: start;
     align-items: stretch;
-    grid-template-columns: repeat(3,300px);
-    overflow-y: scroll;
+    grid-template-columns: repeat(3,250px);
+    margin-bottom: 30px;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 .sec-three aside.card:first-child{margin-left: 5px;}
 aside.card{
@@ -253,7 +255,7 @@ aside.card div.back{
     display: flex;
     color: #fff;
     text-shadow: 0 2px 0 #777777;
-    padding: 40px 10px;
+    /* padding: 40px 10px; */
     overflow-y: scroll;
 }
 aside.card div.front{
@@ -264,7 +266,10 @@ aside.card div.front{
     font-size: 30px;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
+
+
 aside.card:nth-child(2) div.front{background: #FC00FF; background: linear-gradient(90deg,#FC00FF 0%,#c800ff 50%, #FC00FF 100%);}
 aside.card:nth-child(1) div.front{background: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);}
 aside.card div.back{
@@ -286,7 +291,7 @@ aside.card:hover div.back{
 }
 
 /*Projects*/
-.projects{position: relative; display: flex; align-items: center; justify-content: center; gap: 30px; width: 100%;}
+.projects{position: relative; display: flex; align-items: center; justify-content: center; gap: 30px; width: 100%;margin-top: 30px;}
 .projects div:first-child{font-size: 30px; color: #FC00FF;}
 .projects div:last-child a{text-align: center;}
 .projects div:last-child a h4{color: black; cursor: pointer; background-color: white; border-radius: 40px; border: black solid; margin: 3px; padding: 0 4px;}
@@ -411,10 +416,17 @@ button{display: none; width: 40px; height: 40px;}
         margin-left: -150px;
         padding: 5px;
     }
+    .sec-three{
+    grid-template-columns: repeat(3,300px);
+    height: 350px;
+    }
     aside.card div.front{font-size: 50px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif}
     .projects{font-size: 30px;}
     .projects div.title-proj{font-size: 40px;}
-
+    /* padding: 40px 10px; */
+    aside.card div.front, aside.card div.back{
+    padding: 40px 10px;
+    }
 
     #name-btn-up{transform:translateX(0%);top: 110px;margin-left: 88%;}
     #name-btn-down{transform:translateX(0%);top: 190px;margin-left: 88%;}
@@ -423,7 +435,7 @@ button{display: none; width: 40px; height: 40px;}
     #cards-btn-up{margin-left: 3.5%; top: 500px;}
     #cards-btn-down{margin-left: 3.5%;top: 570px;}
     #proj-btn-up{position: absolute;margin-left:1%;  top: 940px;}
-#proj-btn-down{position: absolute;margin-left: 1%;  top: 1020px;}
+    #proj-btn-down{position: absolute;margin-left: 1%;  top: 1020px;}
 }
 /*Laptop Format*/
 
@@ -445,32 +457,33 @@ button{display: none; width: 40px; height: 40px;}
         height: 330px;
         margin-bottom: 90px;
         overflow: hidden;
+        overflow-x: scroll;;
         margin-right: 5px;
     }
-    aside.card div.front{overflow: hidden;}
     #name-btn-up{transform:translateX(0%);top: 110px;margin-left: 92%;}
     #name-btn-down{transform:translateX(0%);top: 190px;margin-left: 92%;}
 
-    /*Scroll Bar*/
-    ::-webkit-scrollbar{
-        width: 10px;
-    }
-    ::-webkit-scrollbar-track{
-        background-color: rgb(155, 154, 154);
-        opacity:0.3;
-        height: 100vh;
-        border-radius: 100vw;
-        margin-block: .5em;
-        /* border: .25em solid hsl(120 75% 50%, 1); *hsl-scale:*https://www.w3schools.com/colors/colors_hsl.asp**/
-    }
-    ::-webkit-scrollbar-thumb{
-        background-color: rgba(90, 89, 89,.7);
-        /* background: linear-gradient(red, blue, yellow); */
-        border-radius: 100vw;
-    }
-    ::-webkit-scrollbar-thumb:hover{
-        background-color: rgba(77, 77, 77, 0.9);
-    }
+    
     .text-two{margin-left: -10%;}
 }
 
+/*Scroll Bar*/
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(155, 154, 154);
+    opacity:0.3;
+    height: 100vh;
+    border-radius: 100vw;
+    margin-block: .5em;
+    /* border: .25em solid hsl(120 75% 50%, 1); *hsl-scale:*https://www.w3schools.com/colors/colors_hsl.asp**/
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(90, 89, 89,.7);
+    /* background: linear-gradient(red, blue, yellow); */
+    border-radius: 100vw;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgba(77, 77, 77, 0.9);
+}
