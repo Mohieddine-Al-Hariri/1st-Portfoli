@@ -2,6 +2,7 @@
 :root{
     --bgcolor: linear-gradient(45deg, #020024 0%, #090979 35%, #00d4ff 100%);
 }
+body{overflow-x: hidden;}
 /*Glass Background*/
 .bg{
     position: fixed;
@@ -11,6 +12,7 @@
     background-image: var(--bgcolor);
     background-color:var(--bgcolor);
     z-index: -5;
+    overflow-x: hidden;
     overflow-y: scroll;
 }
 .glass-ul{
